@@ -1,0 +1,1152 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after
+{
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after
+{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+/*---------- Font ----------*/
+
+@font-face {
+    font-family: "Bodoni_72";
+    src: url("../font/Bodoni_72.woff") format('woff');
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../font/ProximaNova-Regular.woff") format('woff');
+}
+
+/*---------- Body -----------*/
+
+a
+{
+	text-decoration: none;
+	color: #000;
+}
+
+.Header-nav ul li, .Header-nav ul li a, .Product-nav ul li, .Product-nav ul li a, footer ul li, footer ul li 
+{
+	float: left;
+	display: inline-block;
+	font-size: 18px;
+	list-style: none;
+}
+
+h2, h1
+{
+	font-size: 48px;
+	font-family: "Bodoni_72";
+	font-weight: 300;
+}
+
+h3
+{
+	font-size: 24px;
+	font-family: "ProximaNova-Regular"
+}
+
+p, input
+{
+	font-size: 18px;
+	font-family: "ProximaNova-Regular";
+}
+
+.visible
+{
+	visibility: visible !important;
+}
+
+.active 
+{
+    background: #EB5160 !important;
+}
+
+/*---------- Header ---------*/
+
+.Header
+{
+	position: absolute;
+	z-index: 2;
+	margin: 0.8% 0;
+	top: 0;
+}
+
+.Header-logo
+{
+	float: left;
+	width: 19%;
+	margin: 0 0 0 5%;
+}
+
+.Header-logo img
+{
+	width: 100%;
+}
+
+.Header-nav
+{
+	width: 30%;
+	float: right;
+	margin:  1% 5% 0 0;
+}
+
+.Header-nav p
+{
+	float: left;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 13% 0 0 55%;
+}
+
+.Header-nav ul li
+{
+	width: 25%;
+}
+
+.Header-nav img
+{
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+}
+
+.Header-pages 
+{
+	position: initial;
+}
+
+.Header-pages p
+{
+	color: #000;
+}
+/*---------- Carousel ------*/
+
+.carousel
+{
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.carousel ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width:300vw;
+	position: relative;
+	left: 0;
+	transition : 0.8s;
+}
+
+.carousel ul .li-carousel
+{
+	width: 100vw;
+	float: left;
+	position: relative;
+}
+
+.carousel ul .li-carousel img
+{
+	width: 100%;
+}
+
+.container-next
+{
+	position: absolute;
+	right: 0;
+	width: 10%;
+	height: 600px;
+	top: 13%;
+}
+
+.container-prev
+{
+	position: absolute;
+	left: 0;
+	width: 10%;
+	height: 600px;
+	top: 13%;
+}
+
+.container-next:hover .next
+{
+	display: block;
+}
+
+.container-prev:hover .prev
+{
+	display: block;
+}
+
+.next
+{
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 70%;
+	top: 25%;
+	cursor: pointer;
+}
+
+.next img
+{
+	transform: rotate(180deg);
+	margin: 0 40% 0 0;
+	float: right;
+}
+
+.prev
+{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 25%;
+	width: 70%;
+	cursor: pointer;
+}
+
+.prev img
+{
+	margin: 0 0 0 40%;
+}
+
+.next img, .prev img
+{
+	width: 100%;
+}
+
+.dots
+{
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+	transform:translateX(-48%);
+}
+.dots .dots-li.visible
+{
+	background-color: #EB5160;
+	opacity: 1;
+}
+.dots-ul
+{
+	width: 20vw;
+	display:flex;
+	justify-content:space-between;
+}
+
+.dots .dots-li
+{
+	float: left;
+	list-style: none;
+    height: 8px;
+	width: 50px;
+    background: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 1%;
+}
+/*---------- Contenu Carousel*/
+
+.Content-carousel-01
+{
+	top: 27%;
+	left: 54%;
+	position: absolute;
+	width: 30%;
+}
+
+.Content-carousel-01 h2
+{
+	color: #fff;
+}
+
+.Content-carousel-01 p
+{
+	line-height: 1.5;
+	margin: 6% 0 0 0;
+	color: #fff;
+}
+
+.Content-carousel-01 a
+{
+	background: #EB5160;
+	margin: 4% 0 0 0;
+	float: left;
+	text-align: center;
+	padding: 2% 0;
+	width: 85%;
+	border-radius: 4px;
+}
+
+.Content-carousel-01 a h3
+{
+	color: #fff;
+}
+/*---------- Main  Home ---------*/
+
+.Home-main 
+{
+	clear: both;
+}
+
+.Home-main .Title
+{
+	background: #EB5160;
+	font-family: "Bodoni_72";
+}
+
+.Home-main .Title h1
+{
+	text-transform: uppercase;
+	padding: 3% 0 3% 5%;
+	color: #fff;
+}
+
+.Home-main .Product 
+{
+	border-bottom: 1px solid #EB5160;
+}
+
+.Home-main .Product .Image
+{
+	width: 60%;
+	float: left;
+	padding: 5%
+}
+
+.Home-main .Product .Image img
+{
+	width: 60%;
+	display: block;
+	margin: 2% auto;
+}
+
+.Home-main .Product .Description
+{
+	float: left;
+	width: 40%
+}
+
+.Home-main .Product .Description h2
+{
+	text-transform: uppercase;
+	margin: 5% 0 0 0;
+	color: #646464;
+}
+
+.Home-main .Product .Description h3
+{
+	margin: 3% 0 0 0;
+	color: #EB5160;
+}
+
+.Home-main .Product .Description p
+{
+	margin: 3% 0 0 0;
+	width: 90%;
+	line-height: 1.5;
+	color: #646464;
+}
+
+.Home-main .Product-page
+{
+	border: 3px solid #EB5160;
+	width: 45%;
+	float: left;
+	margin: 5% 0;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+.Home-main .Product-page:hover
+{
+	background: #EB5160;
+}
+
+.Home-main .Product-page:hover p
+{
+	color: #fff !important;
+}
+
+.Home-main .Product-page p
+{
+	color: #EB5160 !important;
+	text-align: center;
+	padding: 2% 0;
+	font-size: 24px;
+	float: left;
+	width: 70% !important;
+	transition: 0.5s;
+}
+
+.Home-main .Product-page img
+{
+	transform: rotate(180deg);
+	width: 10%;
+	margin: 7% 0 4% 8%;
+	float: left;
+}
+
+.Home-main .Product-page:hover img
+{
+	content: url('../img_layout/angle-blanc.svg');
+}
+
+/*---------- Main Product ---*/
+
+.Product-main
+{
+	margin: 4% 0 0 0;
+}
+
+.Product-main h1
+{
+	float: left;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #646464;
+}
+
+.Product-main .Product-nav
+{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.Product-main .Product-nav ul li
+{
+	width: 15%;
+	float: left;
+	margin: 0 5%;
+}
+
+.Product-main .Product-nav div
+{
+	border: 2px solid #EB5160;
+	border-radius: 4px;
+}
+
+.Product-main .Product-nav img
+{
+    width: 35%;
+    display: block;
+    margin: 10% auto;
+}
+
+/*
+.Product-main .Product-nav span
+{
+	width: 100%;
+	height: 7px;
+	background: #EB5160;
+	clear: both;
+	float: left;
+	margin: 7% 0;
+	border-radius: 4px;
+	visibility: hidden;
+}
+*/
+
+/*---------- Slidebar -------*/
+
+
+.Product-nav ul li:last-child::after
+{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 10%;
+	margin-left: 18.7%;
+	transition: all .7s ease;
+
+	height: 7px;
+	background: #EB5160;
+	border-radius: 4px;
+}
+
+.Product-nav ul li:hover ~ li:last-child::after, ul li:last-child:hover::after
+{
+	background: #EB5160;
+}
+
+.Product-nav ul li:nth-child(1):hover ~ li:last-child::after{left: 0%; width: 10%;}
+.Product-nav ul li:nth-child(2):hover ~ li:last-child::after{left: 17.5%; width: 10%;}
+.Product-nav ul li:nth-child(3):hover ~ li:last-child::after{left: 35%; width: 10%;}
+.Product-nav ul li:last-child:hover::after{left: 52.5%; width: 10%;}
+
+.Berlingot ul li:last-child::after{left: 0%; width: 10%;}
+.Arlequin ul li:last-child::after{left: 17.5%; width: 10%;}
+.Dragees ul li:last-child::after{left: 35%; width: 10%;}
+.Loukoum ul li:last-child::after{left: 52.5%; width: 10%;}
+
+.Product-main .Title
+{
+	text-transform: uppercase;
+	margin: 5% 0 0 5%;
+	color: #646464;
+}
+
+.Product-main section
+{
+	width: 90%;
+	margin: 3% auto 0 auto;
+}
+
+.Product-main .Description
+{
+	float: left;
+	width: 49%;
+}
+
+.Product-main .Description p
+{
+	color: #646464;
+	line-height: 1.5;
+	margin: 0 0 5% 0;
+}
+
+.Product-main .Description h2
+{
+	width: 40%;
+	float: left;
+	font-family: "ProximaNova-Regular";
+}
+
+.Product-main .Description a
+{
+	width: 60%;
+	float: left;
+	background: #EB5160;
+	border-radius: 4px;
+}
+
+.Product-main .Description a h3
+{
+	text-align: center;
+	color: #fff;
+	padding: 3% 0;
+}
+
+.Product-main .Advices
+{
+	float: left;
+	width: 49%;
+	margin: 0 0 0 2%;
+}
+
+.Product-main .Advices table
+{
+	width: 100%;
+	border: 3px solid #EB5160;
+	border-radius: 4px;
+}
+
+.Product-main .Advices td
+{
+	width: 33.33%;
+	float: left;
+}
+
+.Product-main .Advices td:nth-child(3n+2)
+{
+	border-left: 3px solid #EB5160;
+	border-right: 3px solid #EB5160;
+	border-collapse: collapse;
+}
+
+.Product-main .Advices td img
+{
+	display: block;
+	margin: 5% auto 0 auto;
+}
+
+.Product-main .Advices td nav
+{
+	margin: 10% 0 10% 0;
+}
+
+.Product-main .Advices td ul li
+{
+	color: #646464;
+	margin: 0 0 5% 10%;
+	font-family: "ProximaNova-Regular";
+}
+
+.Product-main .opinion
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.Product-main .opinion h2
+{
+	color: #646464;
+	clear: both;
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 5% 0;
+}
+
+.Product-main .opinion article 
+{
+	clear: both;
+	margin: 0 0 3% 0;
+	float: left;
+	width: 80%;
+}
+
+.Product-main .opinion article img
+{
+	float: left;
+}
+
+.Product-main .opinion article p
+{
+	float: left;
+	margin: 0 0 0 2%;
+	width:90%;
+}
+
+.Product-main .Add-opinion
+{
+	border: 2px solid #EB5160;
+	border-radius: 4px;
+	margin: 0 0 3% 13%;
+	width: 41%;
+	float: left;
+}
+
+.Product-main .Add-opinion input
+{
+	border: none;
+	float: left;
+	margin: 1.5% 0 0 1%;
+	width: 90%;
+}
+
+.Product-main .Add-opinion button
+{
+	border: none;
+	background: #EB5160;
+	width: 7%;
+	float: right;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+}
+
+
+.Product-main .Add-opinion .Arrow
+{
+	width: 70%;
+	margin: 0 auto;
+	padding: 10% 0;
+}
+
+/*---------- Compte ---------*/
+
+.Account-main .Title
+{
+	text-align: center;
+	width: 100%;
+	margin: 2% 0 0 0;
+}
+
+.Account-main .Infos
+{
+	width: 25%;
+	margin: 2% auto 0 auto;
+	display: block;
+}
+
+.Account-main .Infos h3
+{
+	text-align: center;
+	margin: 10% 0;
+}
+
+.Account-main .Infos p
+{
+	margin: 1% 0;
+}
+
+.Account-main .Infos-modify
+{
+	float: left;
+	margin: 2% 0 0 10%;
+	width: 15%
+}
+
+.Account-main .Infos-modify input
+{
+	background: #EB5160;
+	border: 2px solid grey;
+	color: #fff;
+	float: left;
+	padding: 4% 0;
+	width: 60%;
+	cursor: pointer;
+}
+
+.Account-main .Infos-modify img
+{
+	width: 15%;
+	float: left;
+	margin: 1% 0 0 10%;
+}
+
+.Account-main .Adresses
+{
+	clear: both;
+	width: 80%;
+	margin: 3% auto 0 auto;
+}
+
+.Account-main .Adresses h3
+{
+	text-align: center;
+	margin: 5% 0;
+}
+
+.Account-main .Adresses table
+{
+	width: 100%;
+	margin: 3% 0;
+	border-collapse: collapse;
+}
+
+.Account-main .Adresses td, .Account-main .Adresses th
+{
+	border: 2px solid #000;
+	border-collapse: collapse;
+	float: left;
+	padding: 0.5% 0;
+	text-align: center;
+	height: 2em;
+}
+
+.Account-main .Adresses td:nth-child(4n+1), .Account-main .Adresses td:nth-child(4n+3), .Account-main .Adresses td:nth-child(4n+4),
+.Account-main .Adresses th:nth-child(4n+1), .Account-main .Adresses th:nth-child(4n+3), .Account-main .Adresses th:nth-child(4n+4)
+{
+	width: 10%;
+}
+
+.Account-main .Adresses td:nth-child(4n+2), .Account-main .Adresses th:nth-child(4n+2)
+{
+	width: 70%;
+}
+
+.Account-main .Adresses-modify
+{
+	float: left;
+	margin: 2% 0 0 10%;
+	width: 15%
+}
+
+.Account-main .Adresses-modify input
+{
+	background: #EB5160;
+	border: 2px solid grey;
+	color: #fff;
+	float: left;
+	padding: 4% 0;
+	width: 70%;
+	cursor: pointer;
+}
+
+.Account-main .Adresses-modify img
+{
+	width: 15%;
+	float: left;
+	margin: 1% 0 0 10%;
+}
+
+.Account-main .Commands
+{
+	clear: both;
+	width: 80%;
+	margin: 3% auto 0 auto;
+}
+
+.Account-main .Commands h3
+{
+	text-align: center;
+	margin: 5% 0;
+}
+
+.Account-main .Commands table
+{
+	width: 100%;
+	margin: 3% 0;
+	border-collapse: collapse;
+}
+
+.Account-main .Commands td, .Account-main .Commands th
+{
+	border: 2px solid #000;
+	border-collapse: collapse;
+	float: left;
+	padding: 0.5% 0;
+	text-align: center;
+	width: 20%;
+	height: 2em;
+}
+
+.Account-main .Payment
+{
+	clear: both;
+	width: 80%;
+	margin: 3% auto 0 auto;
+}
+
+.Account-main .Payment h3
+{
+	text-align: center;
+	margin: 5% 0;
+}
+
+.Account-main .Payment table
+{
+	width: 50%;
+	margin: 3% 0;
+	border-collapse: collapse;
+}
+
+.Account-main .Payment th
+{
+	border: 2px solid #bbb;
+	border-collapse: collapse;
+	float: left;
+	padding: 0.5% 0;
+	text-align: center;
+	width: 50%;
+}
+
+.Account-main .Payment td
+{
+	border-collapse: collapse;
+	float: left;
+	padding: 0.5% 0;
+	text-align: center;
+	width: 50%;
+	margin: 2% 0;
+	height: 2em;
+}
+
+.Account-main .Payment button
+{
+	background: none; 
+	border: none;
+	cursor: pointer;
+	width: 8%;
+}
+
+.Account-main .Payment img
+{
+	width: 100%;
+	float: left;
+}
+
+.panier
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.deconnexion {
+	margin: 7px 0 0 0;
+	width: 25%;
+	text-transform: uppercase;
+	font-family: 'ProximaNova-Regular';
+}
+
+.deconnexion2 a {
+	color: white;
+	margin: 7px 0 0 0;
+	width: 25%;
+	text-transform: uppercase;
+	font-family: 'ProximaNova-Regular';
+}
+
+.emailconf_title {
+	background-color: #EB5160;
+	margin: 10% 0 0 0;
+	text-align: center;
+}
+
+.confirm_mail {
+	font-size: 20px;
+	margin: 10%;
+	text-align: center;
+}
+
+.confirm_mail_response {
+	margin: 5%;
+	font-size: 30px;
+	text-decoration: underline;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.confirm_mail_response:hover {
+	color: #EB5160;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+/*---------- Footer ---------*/
+
+footer
+{
+	background: #75282F;
+	padding: 2% 0 1% 0;
+}
+
+.Contact div:first-child
+{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.Contact p
+{
+	float: left;
+	width: 50%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.Contact .Form
+{
+	float: left;
+	width: 50%;
+	background: #fff;
+	border-radius: 4px;
+}
+
+.Contact .Form .Mail
+{
+	width: 5%;
+	margin: 0.7% 0 0 5%;
+	float: left;
+}
+
+.Contact input
+{
+	border: none;
+	float: left;
+	margin: 1.5% 0 0 25%;
+	width: 58%;
+}
+
+.Contact button
+{
+	border: none;
+	background: #EB5160;
+	width: 7%;
+	float: left;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+}
+
+
+.Contact .Form .Arrow
+{
+	width: 70%;
+	margin: 0 auto;
+	padding: 10% 0;
+}
+
+.Networks p
+{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 2% 0 0 0;
+	color: #fff;
+}
+
+.Networks nav
+{
+	margin: 3% auto 0 auto;
+	width: 30%;
+}
+
+.Networks ul li
+{
+	width: 25%;
+}
+
+.Networks ul li img
+{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.Copyright
+{
+	float: left;
+	margin: 2% 0 0 5%;
+	color: #fff;
+	clear: both;
+}
+
+
+/*---------- Breakpoint -----*/
+
+
+
+.title_admin{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 80px 0 30px 0;
+	letter-spacing: 1px;
+
+}
+
+.input_log {
+	width: 60%;
+	padding: 7px 10px;
+	margin: 8px 20%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 5%;
+}
+
+.connect_admin{
+	width: 30%;
+	background-color: white;
+	color: #EB5160;
+	padding: 5px 5px;
+	margin: 8px 0;
+	border: 2px solid #EB5160;
+	border-radius: 4px;
+	font-family: 'ProximaNova-Regular';
+	font-size: 16px;
+}
+
+.connect_admin:hover {
+	background-color: #EB5160;
+	color: white;
+}
+
+.panel_admin{
+	text-transform: uppercase;
+	width: 40%;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+	border:  2px solid #EB5160;
+}
+
+.panel_admin label {
+	margin-top: 20px;
+}
+
+/*======================================================*/
+
+.title-achats{
+	margin-top: 5%;
+	font-size: 30px;
+	letter-spacing: 2px;
+	padding-left: 5%;
+}
+.table-achats {
+	width: 90%;
+	margin: 0 auto;
+	/*border: 2px solid black;*/
+	text-align: center;
+
+}
+.table-achats th{
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 2% 0;
+}
+.table-achats td{
+	border: 2px solid black;
+}
+.table-achats td a {
+	color: red;
+}
+
+.danger{
+	font-size: 27px;
+	color: #FF3C51;
+	margin: 10px;
+	text-align: center;
+}
+
+.success{
+	font-size: 27px;
+	color: #4CAF50;
+	margin: 10px;
+	text-align: center;
+}
+.register{
+	float: right;
+}
+
+.lien {
+	margin: 10px 0 0 0;
+	display: block;
+	color: rgba(235, 81, 96, 0.51);
+	font-size: 12px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.lien:hover {
+	color: #EB5160;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.
+
+
+
+
+
+
+
+
+

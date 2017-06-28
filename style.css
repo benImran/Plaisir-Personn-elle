@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bodoni_72";
+    src: url("../Bodoni_72.woff") format('woff');
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../ProximaNova-Regular.woff") format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bodoni_72';
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*======================Header========================*/
+.Header{
+    margin: 0.8% 0;
+    top: 0;
+}
+
+.Header-logo{
+    float: left;
+    width: 19%;
+    margin: 0 0 0 5%;
+}
+
+.Header-logo img{
+    width: 100%;
+}
+
+/*==================Main==========================*/
+
+.title_admin{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 80px 0 30px 0;
+    letter-spacing: 1px;
+    
+}
+
+.input_log {
+    width: 60%;
+    padding: 7px 10px;
+    margin: 8px 20%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+
+.connect_admin{
+    width: 30%;
+    background-color: white;
+    color: #EB5160;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: 2px solid #EB5160;
+    border-radius: 4px;
+    font-family: 'ProximaNova-Regular';
+    font-size: 16px;
+}
+
+.connect_admin:hover {
+    background-color: #EB5160;
+    color: white;
+}
+
+.panel_admin{
+    text-transform: uppercase;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border:  2px solid #EB5160;
+}
+
+.panel_admin label {
+    margin-top: 20px;
+}
+
+/*======================================================*/
+
+.Header-nav{
+    width: 100%;
+}
+
+.Header-nav .header-ul{
+    float: right;
+    margin-top: 23px;
+    margin-right: 50px;
+} 
+
+.Header-nav li{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+
+.Header-nav li a{
+    text-decoration: none;
+    padding-left: 3em;
+}
+
+.Header-nav .deconnexion a{
+    margin-left: 13em;
+}
+
+.title-achats{
+    margin-top: 5%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-left: 5%;
+}
+.table-achats {
+    width: 90%;
+    margin: 0 auto;
+    /*border: 2px solid black;*/
+    text-align: center;
+
+}
+.table-achats th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2% 0;
+}
+.table-achats td{
+    border: 2px solid black;
+}
+.table-achats td a {
+    color: red;
+}
+
+.danger{
+    font-size: 27px;
+    color: #FF3C51;
+    margin: 10px;
+    text-align: center;
+}
+
+.success{
+    font-size: 27px;
+    color: #4CAF50;
+    margin: 10px;
+    text-align: center;
+}
+.register{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+

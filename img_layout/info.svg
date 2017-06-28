@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>info</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-PRODUITS" transform="translate(-1000.000000, -1129.000000)" fill-rule="nonzero" fill="#646464">
+            <g id="INFORMATION" transform="translate(740.000000, 1109.000000)">
+                <g id="Information" transform="translate(210.000000, 20.000000)">
+                    <g id="info" transform="translate(50.000000, 0.000000)">
+                        <g id="Capa_1">
+                            <g id="Group">
+                                <path d="M40,0 C17.9446154,0 0,17.9433846 0,40 C0,62.0566154 17.9446154,80 40,80 C62.0553846,80 80,62.0566154 80,40 C80,17.9433846 62.0553846,0 40,0 Z M40,75.0769231 C20.6584615,75.0769231 4.92307692,59.3415385 4.92307692,40 C4.92307692,20.6584615 20.6584615,4.92307692 40,4.92307692 C59.3415385,4.92307692 75.0769231,20.6584615 75.0769231,40 C75.0769231,59.3415385 59.3415385,75.0769231 40,75.0769231 Z" id="Shape"></path>
+                                <ellipse id="Oval" cx="39.6375385" cy="24.0504615" rx="4.11692308" ry="4.11692308"></ellipse>
+                                <path d="M39.5532308,34.8824615 C38.1944615,34.8824615 37.0916923,35.9852308 37.0916923,37.344 L37.0916923,58.2670769 C37.0916923,59.6258462 38.1944615,60.7286154 39.5532308,60.7286154 C40.912,60.7286154 42.0147692,59.6258462 42.0147692,58.2670769 L42.0147692,37.344 C42.0147692,35.984 40.912,34.8824615 39.5532308,34.8824615 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
